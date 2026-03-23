@@ -15,7 +15,7 @@ body {
 /* HERO */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('https://images.unsplash.com/photo-1581091012184-5c8f8e7a3f4f');
+              url('https://images.unsplash.com/photo-1558002038-1055907df827');
   background-size: cover;
   background-position: center;
   color: white;
@@ -23,9 +23,7 @@ body {
   padding: 100px 20px;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-}
+.hero h1 { font-size: 2.5em; }
 
 .btn {
   display: inline-block;
@@ -37,17 +35,13 @@ body {
   border-radius: 5px;
 }
 
-/* SECTIONS */
 section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
+h2 { text-align: center; }
 
 /* SERVICES */
 .services {
@@ -63,16 +57,40 @@ h2 {
   text-align: center;
 }
 
-/* WHY US */
+/* WHY */
 .why {
   background: #0a1f44;
   color: white;
   text-align: center;
 }
 
-/* CONTACT */
-.contact {
+/* REVIEWS */
+.reviews {
+  background: #fafafa;
+}
+
+.review {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* AREAS */
+.areas {
   text-align: center;
+}
+
+/* CONTACT */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 footer {
@@ -82,8 +100,8 @@ footer {
   padding: 20px;
 }
 </style>
-
 </head>
+
 <body>
 
 <!-- HERO -->
@@ -103,30 +121,63 @@ footer {
     </div>
     <div class="card">
       <h3>Business Security</h3>
-      <p>Keep your business safe with professional installations.</p>
+      <p>Secure your premises with professional systems.</p>
     </div>
     <div class="card">
       <h3>Maintenance</h3>
-      <p>Ongoing support and system upgrades.</p>
+      <p>Ongoing support and upgrades.</p>
     </div>
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- WHY -->
 <section class="why">
-  <h2>Why Choose Us?</h2>
-  <p>✔ Local Essex installers</p>
-  <p>✔ Affordable pricing</p>
-  <p>✔ Fast and reliable service</p>
-  <p>✔ High-quality equipment</p>
+  <h2>Why Choose Us</h2>
+  <p>✔ Local Essex Experts</p>
+  <p>✔ Affordable Pricing</p>
+  <p>✔ Fast Installation</p>
+  <p>✔ 5-Star Customer Service</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="services">
+    <div class="review">
+      <p>"Great service, very professional installation!"</p>
+      <strong>- John D</strong>
+    </div>
+    <div class="review">
+      <p>"Highly recommend, great quality cameras."</p>
+      <strong>- Sarah M</strong>
+    </div>
+    <div class="review">
+      <p>"Fast, reliable and affordable."</p>
+      <strong>- Mike T</strong>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas">
+  <h2>Areas We Cover</h2>
+  <p>Basildon • Southend • Castle Point • Chelmsford • Benfleet • Canvey Island • Essex</p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
+<section id="contact">
+  <h2>Get a Free Quote</h2>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <textarea name="message" placeholder="Tell us what you need" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+
   <p>📞 Call: 07XXXXXXXXX</p>
   <p>📧 Email: info@castlepointsecurity.co.uk</p>
-  <a href="tel:07XXXXXXXXX" class="btn">Call Now</a>
 </section>
 
 <!-- FOOTER -->
